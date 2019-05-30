@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-var pares=[];
-var impares=[];
+        var pares = [];
+        var impares = [];
 
-function aleatorio(){
+        function aleatorio() {
 
-for(var i=0;i<50;i++){
-    let num = Math.floor((Math.random()*100)+1);
-    console.log (num);
-    document.write( num + " / ");
-    if(num%2==0){
-      pares.push(num);
-     
-    }
-else{
-    impares.push(num);
-     
-}
-}
-document.write("<hr>"+"Los números pares de la cadena son: "+pares)
-document.write("<hr>"+"Los números impares de la cadena son: "+impares+"<hr>")
-}
-console.log(pares);
-console.log(impares);
+            for (var i = 0; i < 50; i++) {
+                let num = Math.floor((Math.random() * 100) + 1);
+                console.log(num);
+                document.write(num + " / ");
+                if (num % 2 == 0) {
+                    pares.push(num);
 
+                }
+                else {
+                    impares.push(num);
 
-
-aleatorio();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                }
+            }
+            document.write("<hr>" + "Los números pares de la cadena son: " + pares)
+            document.write("<hr>" + "Los números impares de la cadena son: " + impares + "<hr>")
+        }
+        console.log(pares);
+        console.log(impares);
 
 
 
     </script>
 </head>
+
 <body>
-    
+    <h1>Ejemplo de Llamada.</h1>
+    <p>
+        Un buen ejemplo de la llamada a funciones sería esta.Supongamos que tienes que escribir un árticulo
+        y decir que vas a sacar 50 números aleatorios que ordenaremos de mayor a menor,como a continuación te voy a
+        mostrar:
+    </p>
+    <script>aleatorio();</script>
+    <p>Y después seguiriamos escribiendo, de tal forma que no necesitamos ensuciar nuestro html y podemos colocar la 
+        funcion creada en el lugar y momento que deseemos.
+    </p>
 </body>
+
 </html>
